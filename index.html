@@ -6,7 +6,159 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body>   
+
+    <!-- Header -->
+    <header class="header-wrapper shadow-sm fixed-top">
+        <img class="logo" src="assets/logo uniska-i.png" alt="logo uniska">
+
+        <!-- Menu -->
+        <div class="menu">  
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Facilitation</a>
+            <a href="#achievement" class="nav-item">Achievement </a>
+            <a href="#message" class="nav-item">Message Us </a>
+        </div>   
+    </header>
+
     
+    <!-- Home -->
+    <main id="home" class="main-content">
+            <article style="padding-bottom: 150px; padding-top: 25px;">
+                    <header>
+                        <h1>Welcome <span id="name">user</span>, to Website UNISKA</h1>
+                        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 500;">Ini adalah Website dari Universitas Islam Kalimantan Muhammad Arsyad Al Banjari.</p>
+                        <div>
+                            <!-- Slide Shows -->
+                            <img
+                              class="img-slideshow"
+                              src="assets/6uniska.jpg"
+                            />
+                            <img
+                              class="img-slideshow"
+                              src="assets/2uniska.jpg"
+                            />
+                            <img
+                              class="img-slideshow"
+                              src="assets/3uniska.jpg"
+                            />
+                            <img
+                              class="img-slideshow"
+                              src="assets/4uniska.jpg"
+                            />
+                            <img
+                              class="img-slideshow"
+                              src="assets/5uniska.jpg"
+                            />
+                            <div class="button-panah">
+                                <button onclick="plusDivs(-1)">Previous</button>
+                                <button onclick="plusDivs(1)">Next</button>
+                            </div>   
+                        `</div>
+                    </header>
+            </article>    
+    </main>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e0e9f8" fill-opacity="1" 
+        d="M0,160L120,170.7C240,181,480,203,720,197.3C960,192,1200,160,1320,144L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+
+    <!-- Our Fasilitation -->
+    <section id="our-profile">
+                <h1>  Our Facilitation </h1>
+                <div class="headquarters">
+                    <div class="headquarter-item">
+                        <div class="bg-image" >
+                            <img src="assets/perpustakaan.jpeg" />
+                        </div>
+                        <p>Library</p>
+                    </div>
+                    <div class="headquarter-item">
+                        <div class="bg-image" >
+                            <img src="assets/fasilitas-olahraga.jpeg" />
+                        </div>
+                        <p>Sport Facility</p>
+                    </div>
+                    <div class="headquarter-item">
+                        <div class="bg-image" >
+                            <img src="assets/laboratorium-bahasa.jpeg" />
+                        </div>
+                        <p>Language Laboratory</p>
+                    </div>
+                    <div class="headquarter-item">
+                        <div class="bg-image" >
+                            <img src="assets/lab-komputer.jpeg" />
+                        </div>
+                        <p>Computer Laboratory</p>
+                    </div>
+                </div>
+            
+    </section>   
+
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e0e9f8" fill-opacity="1" 
+        d="M0,256L120,261.3C240,267,480,277,720,282.7C960,288,1200,288,1320,288L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+
+    <!-- Achievement  -->
+    <section class="main-content" id="achievement">
+            <h1>Achievement </h1>
+            <main>
+                    <header>  
+                        <div class="achievement">
+                            <img class="" src="assets/tingkat-web-dan-unirank-uniska.jpg" width="100%"/>
+                        </div>
+                    </header>
+            </main>
+    </section>
+
+    <!-- Message -->
+    <section class="message" id="message">
+        <h1>Message Us</h1>
+
+        <!-- Form  -->
+        <form name="message-form" class="message-us-form" onsubmit="return validateForm()">
+            <!-- Form Input --> 
+            <div class="input-form">
+                <label class="form-label"> Nama </label>     
+                <input placeholder="Nama" type="text" name="full-name" class="form-control"  />
+                <br/>
+
+                <label class="form-label"> Tanggal Lahir </label><br>
+                <input type="date" name="birth-date" class="form-control" />
+                <br/>
+
+                <label class="form-label"> Jenis Kelamin </label> <br>   
+                <input type="radio" id="male" name="gender" value="Laki-Laki"/>
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan"/>
+                <label for="female">Perempuan</label>
+                <br/>
+                <br>
+
+                <label class="form-label"> Pesan </label>
+                <textarea placeholder="Pesan" name="messages" class="form-control" id=""></textarea>
+                <br/>
+
+                <button type="submit" class="button-kirim button-sukses" value="Submit"> Submit </button>
+            </div>
+
+            <!-- Form Result -->
+            <div class="result-form">
+                <p>Current Time: <b><span id="current-time"></span></b></p>
+                <p>Nama: <b><span id="sender-full-name"></span></b></p>
+                <p>Tanggal Lahir: <b><span id="sender-birth-date"></span></b></p>
+                <p>Jenis Kelamin: <b><span id="sender-gender"></span></b></p>
+                <p>Pesan:  <b><span id="sender-messages"></span></b></p>
+            </div>
+        </form>
+    </section>  
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 50"><path fill="#e0e9f8" fill-opacity="1" d="M0,64L1440,64L1440,0L0,0Z"></path></svg>
+    
+    <!-- Footer -->
+    <footer>
+            <p><b>Made by Muhammad Aldi Hudaifi</b></p>           
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,1 +1,409 @@
 /* ini CSS */
+
+/* Body */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;        
+  }
+
+#name {
+    color: rgb(248, 59, 2);
+}
+
+/* Header */
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f9fd3;;
+    padding: 16px 24px;
+  }
+
+  .nav-item {
+    font-weight: bold;
+  }
+
+  .nav-item:hover {
+
+    font-weight: bolder; 
+    transition: 0.3s background-color ease-out;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+   }
+
+  .header-wrapper > .menu {
+    display: flex;
+  }
+
+/* Navigation Menu */
+.header-wrapper > .menu > a {
+    border: 1px solid gray;
+    background-color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+  .header-wrapper > .menu > a:hover {
+    background-color: gainsboro;
+  }
+
+  .header-wrapper > .menu > a:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .header-wrapper > .menu > a:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .header-wrapper > .logo {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    border-radius: 50%;   
+  }
+
+  .main-content {
+    padding: 24px;
+    background-color: #e0e9f8;
+}
+
+section.message, footer {
+      background-color: #e0e9f8;
+  }
+
+section.message {
+    padding-top:20px;
+    padding-bottom: 20px;    
+}
+
+/* svg */
+  svg.svg {
+    vertical-align: middle;
+    position: relative;
+    bottom: -20px; 
+}
+
+  .main-content > article {
+        margin-top: 25px;
+    }
+
+
+/* Slide Show */
+.img-slideshow {
+     height: 500px; 
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+    }
+
+    div.result-form {
+            width: 100%;
+            height: 384px;
+    }
+    
+
+
+section,
+header {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+section > form > div.input-form {
+    margin-bottom: 50px;
+}
+
+/* Gambar Fasilitas */
+.bg-image > img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.headquarters {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-panah {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.headquarter-item>p {
+    font-size: 20px;
+}
+
+.headquarter-item {
+    text-align: center;
+}
+
+
+.message-us-form {
+    display: flex;
+}
+
+/* Border Form Input dan Hasil */
+.input-form,
+.result-form {
+    flex: 1;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    padding-left: 11px;  
+}
+
+.input-form>div {
+    padding-bottom: 16px;
+}
+
+input {
+    height: 16px;
+}
+
+.form-field {
+    margin-left: 16px;
+}
+
+.field-title {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-label {
+    margin-bottom: .5rem; 
+    display: inline-block;
+}
+
+/* Form Input */
+.form-control {
+    display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+/* Button Kirim */
+.button-kirim {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-bottom: 20px;
+      }
+
+/* Warna Button Kirim */
+.button-sukses {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+}      
+
+.button-sukses:hover {
+        color: #fff;
+        background-color: #157347;
+        border-color: #146c43;
+  }
+
+.result-form {
+        border: 2px solid rgba(0,0,0,.125);
+        padding: 8px;
+        margin-left: 5px;    
+}
+
+footer {
+        text-align: center;
+        position: relative;
+        top: -20px; 
+}
+
+
+ /* Scroll Smooth */    
+ @media (prefers-reduced-motion: no-preference)
+ {
+    :root {
+    scroll-behavior: smooth;
+    }
+ }
+
+
+/* Responsive  Maksimal 600px */
+@media only screen and (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img.logo {
+        position: relative;
+        top: -11px;
+    }
+    
+    .menu {
+       
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .menu > .nav-item {
+    margin-right: 2px;
+    }
+    
+    .main-content > article {
+     margin-top: 60px;
+}
+
+.headquarters {
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.headquarter-item {
+    width: 200px;
+    height: 200px;
+}
+
+.message-us-form {
+    flex-direction: column;
+}       
+    
+    .img-slideshow {
+        height: 220px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.result-form {
+        width: 95%;
+        height: 386px;
+        margin-left: 1px;
+        position: relative;
+        top: -15px;
+        /* margin-bottom: 15px; */
+        font-size: 14px;
+    }
+
+    footer {
+    text-align: center;
+    font-size: normal; 
+}
+}
+
+
+/* Responsive Maksimal 480px */
+@media only screen and (max-width: 480px) {
+    .header-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    .menu {
+        display: flex;
+        align-items:center;
+        font-size: 8px;
+    }
+
+    .nav-item:hover {
+        font-size: 11px;
+    }
+
+    main.main-content > article > header > h1 {
+        font-size: 20px;
+    }
+    
+    main.main-content > article > header > p {
+        font-size: 15px;
+    }
+
+    .menu > .nav-item {
+        margin-right: 5px;
+    }
+
+    .headquarters {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    .headquarter-item {
+        width: 150px;
+        height: 150px;
+        padding-top: 20px;
+    }
+
+    .headquarter-item > p {
+        position: relative;
+        top: -20px;
+    }
+
+    .achievement {
+        width: 100%;
+        height: 100%;
+    }
+
+    .message-us-form {
+        flex-direction: column;
+    }        
+
+    .main-content > article {
+        margin-top: 60px;
+    }
+
+    div.result-form {
+           
+            font-size: 11px; 
+        }
+
+    footer {
+     text-align: center;
+     font-size: small; 
+    }
+}
